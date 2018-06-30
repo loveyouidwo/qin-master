@@ -10,10 +10,6 @@
             margin:0;
             padding:0;
         }
-        body
-        {
-            background-color:#ccc;
-        }
         /*-------导航栏-----------*/
         .header
         {
@@ -105,11 +101,64 @@
             background-color:blue;
             margin:0 auto;
         }
-        .footer marquee
+        .footer .footer_top
+        {
+            width:1349px;
+            height:100px;
+            background-color:black;
+        }
+        .footer .footer_top marquee
         {
             color:yellow;
-            font-size:25px;
+            font-size:30px;
             line-height: 100px;
+        }
+        .footer .yan
+        {
+            width:1349px;
+            height:500px;
+            background-color:purple;
+            overflow:hidden;
+        }
+        .footer .yan ul
+        {
+            width:10792px;
+            height:500px;
+        }
+        .footer .yan ul li
+        {
+            list-style:none;
+            width:1349px;
+            height:500px;
+            float:left;
+        }
+        .footer .yan ul li img
+        {
+            width:1349px;
+            height:500px;
+            animation:zan 10s linear 0s infinite;
+        }
+        @keyframes zan {
+            from
+            {
+                margin-left:0;
+            }
+            to
+            {
+                margin-left:-8094px;
+            }
+        }
+        .footer .qin
+        {
+            width:1349px;
+            height:500px;
+            background-color:palegreen;
+        }
+        .footer .mei
+        {
+            width:1349px;
+            height:500px;
+            background-color:rosybrown;
         }
     </style>
 </head>
@@ -147,7 +196,23 @@
     </div>
     <!-- 底部超链接-->
     <div class="footer">
-        <marquee>love you  一人一心一辈子 </marquee>
+       <div class="footer_top">
+           <marquee>Love you 余生不予情  今生无缘 来世再相遇可好！ </marquee>
+       </div>
+        <div class="yan">
+            <ul>
+                <li><img src="image/dahua1.jpg" </li>
+                <li><img src="image/dahua2.jpg" </li>
+                <li><img src="image/dahua3.jpg" </li>
+                <li><img src="image/dahua4.jpg" </li>
+                <li><img src="image/dahua5.jpg" </li>
+                <li><img src="image/dahua6.jpg" </li>
+                <li><img src="image/dahua1.jpg" </li>
+                <li><img src="image/dahua2.jpg" </li>
+            </ul>
+        </div>
+        <div class="qin"></div>
+        <div class="mei"></div>
     </div>
 </body>
 </html>
