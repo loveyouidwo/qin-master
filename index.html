@@ -10,38 +10,140 @@
             margin:0;
             padding:0;
         }
+        body
+        {
+            background-color:#ccc;
+        }
         /*-------导航栏-----------*/
         .header
         {
-            width:1200px;
+            width:1349px;
             height:150px;
-            background-color:red;
-            margin:0 auto;
+            position:relative;
+            background-image:url("image/xingkong.png");
+        }
+        .header .header_left
+        {
+            width:300px;
+            height:150px;
+            /*position: absolute;*/
+            float:left;
+        }
+        .header .header_left img
+        {
+            width:300px;
+            height:150px;
+        }
+        .header .header_right
+        {
+           width:900px;
+            height:150px;
+            /*position:absolute;*/
+            float:right;
+        }
+        .header .header_right .zan
+        {
+            width:900px;
+            height:150px;
+        }
+        .header .header_right .zan li
+        {
+            list-style:none;
+            float:left;
+            margin-left:50px;
+            line-height:150px;
+        }
+        .header .header_right .zan li a
+        {
+            color:white;
+            font-size:16px;
         }
         /*------内容------------*/
         .content
         {
             width:980px;
             height:500px;
-            background-color:yellow;
+            background-image:url("image/beijin.png");
             margin:0 auto;
+        }
+        .content .left_zan
+        {
+            width:200px;
+            height:500px;
+            float:left;
+        }
+        .content .left_zan  li
+        {
+            list-style:none;
+            margin-top:40px;
+        }
+        .content .left_zan li a
+        {
+            color:yellow;
+            font-size:16px;
+        }
+        .content .left_gang
+        {
+            width:780px;
+            height:500px;
+            float:right;
+        }
+        .content .left_gang video
+        {
+          width:780px;
+            height:500px;
         }
         /*---------底部超链接------------*/
         .footer
         {
-            width:1200px;
+            width:1349px;
             height:100px;
             background-color:blue;
             margin:0 auto;
+        }
+        .footer marquee
+        {
+            color:yellow;
+            font-size:25px;
+            line-height: 100px;
         }
     </style>
 </head>
 <body>
 <!--导航栏-->
-    <div class="header"></div>
+    <div class="header">
+        <div class="header_left">
+            <a href="#"><img src="image/logo.jpg"/></a>
+        </div>
+        <div class="header_right">
+            <ul class="zan">
+                <li><a href="https://www.jd.com">京东</a></li>
+                <li><a href="https://www.taobao.com">淘宝</a></li>
+                <li><a href="https://www.tmall.com">天猫</a></li>
+                <li><a href="https://www.vip.com/">唯品会</a></li>
+                <li><a href="https://www.suning.com">苏宁易购</a></li>
+            </ul>
+        </div>
+    </div>
     <!--内容框-->
-    <div class="content"></div>
+    <div class="content">
+        <ul class="left_zan">
+            <li><a href="https://www.jetbrains.com/webstorm/download/#section=windows">WebStorm</a></li>
+            <li><a href="https://www.eclipse.org/downloads/">Eclipse</a></li>
+            <li><a href="https://www.oracle.com/index.html">ORACLE官网</a></li>
+            <li><a href="https://github.com/">Github</a></li>
+            <li><a href="http://www.navicat.com.cn/products">Navicat数据库</a></li>
+            <li><a href="http://www.apache.org/">APACHE</a></li>
+            <li><a href="https://dev.mysql.com/downloads/mysql/">MySql官网</a></li>
+            <li><a href="https://git-scm.com/">Git官网</a></li>
+        </ul>
+        <div class="left_gang">
+          <video src="image/影视原声%20-%20莫失莫忘%20电视剧%20%23仙剑奇侠传%23插曲Cut.mkv" controls="controls"></video>
+        </div>
+    </div>
     <!-- 底部超链接-->
-    <div class="footer"></div>
+    <div class="footer">
+        <marquee>love you  一人一心一辈子 </marquee>
+    </div>
 </body>
 </html>
